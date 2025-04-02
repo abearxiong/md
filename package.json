@@ -20,6 +20,8 @@
     "firefox:zip": "wxt zip -b firefox",
     "lint": "eslint . --fix",
     "type-check": "vue-tsc --build --force",
+    "prepub": "vite build -c vite.kevisual.config.ts",
+    "pub": "envision deploy ./dist -k md -v 1.6.0 -o root -u",
     "postinstall": "simple-git-hooks && wxt prepare"
   },
   "dependencies": {
